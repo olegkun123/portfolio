@@ -1,0 +1,260 @@
+h1, h2, h3, h4 {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.7;
+  letter-spacing: 1.5px;
+}
+
+p, a, button, input, textarea, li {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.65;
+  letter-spacing: 1.3px;
+  font-weight: 600;
+}
+
+a {
+  transition: 0.2s !important;
+}
+
+*::selection {
+  background-color: #180a68;
+  color: #ffffff;
+}
+
+.standart-btn {
+  background-color: #243dad;
+  padding: 8px 12px;
+  border-radius: 7px;
+  transition: 0.2s;
+  color: #ffffff;
+  border: 2px solid #243dad;
+  user-select: none;
+}
+.standart-btn:hover {
+  border-radius: 12px;
+  background-color: #a6edff;
+  color: #243dad;
+}
+.standart-btn::active {
+  transform: scale(1.05) !important;
+}
+
+nav {
+  width: 100%;
+  position: fixed !important;
+  background-color: #c9c9c9;
+  z-index: 10;
+}
+nav ul {
+  margin: 0 !important;
+}
+nav ul li {
+  margin: 0 20px;
+}
+nav ul li a {
+  color: #000000 !important;
+  font-weight: 600;
+}
+nav ul li a:hover {
+  color: #253996 !important;
+}
+nav ul li a:hover::after {
+  transform: scale(1);
+}
+nav ul li a::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  display: block;
+  transform: scale(0);
+  background-color: #253996;
+  transition: 0.25s;
+}
+nav .navbar-collapse {
+  flex-grow: 0;
+}
+nav .navbar-brand {
+  width: 45px;
+  padding: 0;
+  border-radius: 50%;
+}
+nav .navbar-brand img {
+  transition: 0.3s;
+  border-radius: 50%;
+}
+nav .navbar-brand img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 3px 1px #000000;
+}
+
+.intro {
+  padding-top: 69px;
+  background-color: #c9c9c9;
+}
+.intro .container-fluid {
+  padding: 0;
+}
+
+#slider .carousel-item {
+  width: 100%;
+  height: calc(100vh - 69px);
+}
+#slider .carousel-item h1 {
+  font-style: 2em;
+}
+
+.carousel-caption {
+  margin-bottom: 16%;
+  text-shadow: 2px 2px 5px #000000;
+}
+.carousel-caption p {
+  line-height: 1.8;
+}
+.carousel-caption span {
+  background: linear-gradient(45deg, #83d83d 33%, #9fe248 66%, #a4fd70);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 1px solid #83d83d;
+  border-radius: 5px;
+  padding: 2px 4px;
+  transition: 0.3s;
+  cursor: pointer;
+  margin: 0 5px;
+  user-select: none;
+}
+.carousel-caption span:hover {
+  box-shadow: 0 0 4px 2px #83d83d;
+  color: #a4fd70 !important;
+}
+
+.web-dev .carousel-caption {
+  color: #34e4c6 !important;
+}
+
+.prog-dev .carousel-caption {
+  color: #e9ec0e !important;
+}
+
+main {
+  padding: 100px 0;
+}
+main h2 {
+  text-align: center !important;
+}
+
+.about h3 {
+  font-size: 1.2em !important;
+}
+.about ul {
+  margin-bottom: 0;
+}
+.about ul li {
+  list-style-type: none;
+}
+
+.facts {
+  margin-top: 30px;
+}
+.facts .card-body {
+  margin-top: 7px;
+  background-color: #525252;
+  color: #ffffff;
+}
+.facts .btn:active, .facts .btn-primary:active {
+  box-shadow: 0 !important;
+}
+.facts .btn .btn:checked, .facts .btn-primary .btn:checked {
+  box-shadow: 0 !important;
+}
+
+.skills {
+  margin: 50px 0;
+}
+.skills .row {
+  margin-top: 20px;
+}
+
+.value {
+  line-height: 1.65;
+  transition: 0.2s;
+}
+.value p {
+  text-align: center !important;
+}
+
+.skill-1 {
+  width: 90%;
+  background-color: #243dad;
+  color: #ffffff;
+}
+
+.skill-2 {
+  width: 95%;
+  background-color: #b42d2d;
+  color: #ffffff;
+}
+
+.skill-3 {
+  width: 85%;
+  background-color: #573d68;
+  color: #ffffff;
+}
+
+.skill-4 {
+  width: 80%;
+  background-color: #e4e011;
+}
+
+.skill-5 {
+  width: 70%;
+  background-color: #29cf98;
+}
+
+.skill-6 {
+  width: 95%;
+  background-color: #16e9e9;
+}
+
+.description p, .table p {
+  margin: 7px 0;
+}
+
+.portfolio h2, .portfolio h3 {
+  margin-bottom: 30px;
+}
+.portfolio h3 {
+  margin-left: 45px;
+  margin-top: 50px;
+}
+.portfolio .card {
+  height: 435px;
+  margin: 0 auto;
+}
+.portfolio .card h3 {
+  font-size: 1.4em;
+}
+.portfolio .card .card-text {
+  margin-bottom: 15px !important;
+}
+.portfolio .row {
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #c9c9c9;
+  padding: 15px 0;
+}
+footer .desc {
+  color: #243dad;
+}
+footer .social-media {
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+footer .social-media a {
+  margin: 0 8px;
+}
+footer .social-media a img {
+  width: 30px;
+}
+
+/*# sourceMappingURL=main.css.map */

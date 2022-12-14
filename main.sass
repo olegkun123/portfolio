@@ -1,0 +1,221 @@
+$title-font: 'Ubuntu', sans-serif
+$text-font: 'Raleway', sans-serif
+
+$select-bgc: #180a68
+$blue: #243dad
+$white: #ffffff
+$black: #000000
+$grey: #c9c9c9
+
+h1, h2, h3, h4
+    font-family: $title-font
+    line-height: 1.7
+    letter-spacing: 1.5px
+
+p, a, button, input, textarea, li
+    font-family: $text-font
+    line-height: 1.65
+    letter-spacing: 1.3px
+    font-weight: 600
+
+a
+    transition: .2s !important
+
+*::selection
+    background-color: $select-bgc
+    color: $white
+
+.standart-btn
+    background-color: $blue
+    padding: 8px 12px
+    border-radius: 7px
+    transition: .2s
+    color: $white
+    border: 2px solid $blue
+    user-select: none
+    &:hover
+        border-radius: 12px
+        background-color: #a6edff
+        color: $blue
+    &::active
+        transform: scale(1.05) !important
+
+
+
+
+nav
+    width: 100%
+    position: fixed !important
+    background-color: $grey
+    z-index: 10
+    ul
+        margin: 0 !important
+        li
+            margin: 0 20px
+            a
+                color: $black !important
+                font-weight: 600
+                &:hover
+                    color: #253996 !important
+                &:hover::after
+                    transform: scale(1)
+            a::after
+                content: ""
+                height: 1px
+                width: 100%
+                display: block
+                transform: scale(0)
+                background-color: #253996
+                transition: .25s
+    .navbar-collapse
+        flex-grow: 0
+    .navbar-brand
+        width: 45px
+        padding: 0
+        border-radius: 50%
+        img
+            transition: .3s
+            border-radius: 50%
+            &:hover
+                transform: scale(1.1)
+                box-shadow: 0 0 3px 1px $black
+
+
+.intro
+    padding-top: 69px
+    background-color: $grey
+    .container-fluid
+        padding: 0
+
+#slider
+    .carousel-item
+        width: 100%
+        height: calc(100vh - 69px)
+        h1
+            font-style: 2em
+
+.carousel-caption
+    margin-bottom: 16%
+    text-shadow: 2px 2px 5px $black
+    p
+        line-height: 1.8
+    span
+        background: linear-gradient(45deg, #83d83d 33%, #9fe248 66%, #a4fd70)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        border: 1px solid #83d83d
+        border-radius: 5px
+        padding: 2px 4px
+        transition: .3s
+        cursor: pointer
+        margin: 0 5px
+        user-select: none
+        &:hover
+            box-shadow: 0 0 4px 2px #83d83d
+            color: #a4fd70 !important
+
+.web-dev
+    .carousel-caption
+        color: #34e4c6 !important
+
+.prog-dev
+    .carousel-caption
+        color: #e9ec0e !important
+
+
+
+main
+    padding: 100px 0
+    h2
+        text-align: center !important
+
+.about
+    h3
+        font-size: 1.2em !important
+    ul
+        margin-bottom: 0
+        li
+            list-style-type: none
+
+.facts
+    margin-top: 30px
+    .card-body
+        margin-top: 7px
+        background-color: #525252
+        color: $white
+    .btn, .btn-primary
+        &:active
+            box-shadow: 0 !important
+        .btn:checked
+            box-shadow: 0 !important
+
+.skills
+    margin: 50px 0
+    .row
+        margin-top: 20px
+
+.value
+    line-height: 1.65
+    transition: .2s
+    p
+        text-align: center !important
+
+.skill-1
+    width: 90%
+    background-color: #243dad
+    color: $white
+.skill-2
+    width: 95%
+    background-color: #b42d2d
+    color: $white
+.skill-3
+    width: 85%
+    background-color: #573d68
+    color: $white
+.skill-4
+    width: 80%
+    background-color: #e4e011
+.skill-5
+    width: 70%
+    background-color: #29cf98
+.skill-6
+    width: 95%
+    background-color: #16e9e9
+
+.description p, .table p
+    margin: 7px 0
+
+
+
+
+.portfolio
+    h2, h3
+        margin-bottom: 30px
+    h3
+        margin-left: 45px
+        margin-top: 50px
+    .card
+        height: 435px
+        margin: 0 auto
+        h3
+            font-size: 1.4em
+        .card-text
+            margin-bottom: 15px !important
+    .row
+        margin-bottom: 30px
+
+
+
+
+footer
+    background-color: $grey
+    padding: 15px 0
+    .desc
+        color: $blue
+    .social-media
+        align-items: flex-start
+        justify-content: flex-end
+        a
+            margin: 0 8px
+            img
+                width: 30px
